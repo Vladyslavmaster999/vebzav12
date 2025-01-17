@@ -12,18 +12,37 @@
         border-bottom: 1px solid #ddd;
         padding: 10px 20px;
     }
-    .navbar-nav a {
+    .navbar-nav {
+        flex-grow: 1;
+    }
+    .navbar-nav.left-menu a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .navbar-nav.left-menu a:hover {
+        color: #a00000;
+    }
+    .navbar-nav.center-menu {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-nav.center-menu a {
         color: #000;
         text-decoration: none;
         margin-right: 20px;
         font-weight: bold;
     }
-    .navbar-nav a:hover {
+    .navbar-nav.center-menu a:hover {
         color: #a00000;
+    }
+    .social-icons {
+        display: flex;
+        align-items: center;
     }
     .social-icons a {
         color: #000;
-        margin-left: 15px;
+        margin-right: 15px;
         font-size: 1.5rem;
     }
     .social-icons a:hover {
@@ -34,9 +53,11 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="navbar-nav">
+            <div class="container d-flex align-items-center">
+                <div class="navbar-nav left-menu">
                     <a href="#">ЗНАЙТИ РЕЦЕПТ</a>
+                </div>
+                <div class="navbar-nav center-menu">
                     <a href="#">РЕЦЕПТИ</a>
                     <a href="#">ЛАЙФХАКИ</a>
                     <a href="#">ХЕЛСІ</a>

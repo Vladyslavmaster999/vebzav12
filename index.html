@@ -48,10 +48,11 @@
     .social-icons a:hover {
         color: #a00000;
     }
-    video {
+    iframe {
         width: 100%;
-        height: auto;
+        height: 400px;
         margin-top: 20px;
+        border: none;
     }
 </style>
 </head>
@@ -82,10 +83,12 @@
         <div class="row">
             <div class="col-12">
                 <h1>Welcome to my website!</h1>
-                <video controls>
-                    <source src="https://youtu.be/s3NMtHH2oqc?feature=shared" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <!-- Embedded YouTube Video -->
+                <iframe 
+                    src="https://www.youtube.com/embed/s3NMtHH2oqc" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </main>
